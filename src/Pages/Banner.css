@@ -1,0 +1,30 @@
+.banner-section{
+    background-image: url('../assests/slider.png');
+    background-position: center center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+@media screen and (min-width:576px) {
+.text-section{
+     padding-top: 100px!important;
+    padding-bottom: 10px !important;
+}
+}
+@media screen and (min-width:768px) {
+.text-section{
+     padding-top: 200px!important;
+    padding-bottom: 20px !important;
+}
+}
+@media screen and (min-width: 992px) {
+.text-section{
+    padding-top: 220px!important;
+    padding-bottom: 40px !important;
+}
+}
+@media screen and (max-width:576px) {
+.text-section{
+     padding-top: 40px!important;
+    padding-bottom: 5px !important;
+}
+}
