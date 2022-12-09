@@ -1,17 +1,11 @@
 import React, { useState } from "react";
-import { Col, Container, Image, Row } from "react-bootstrap";
-import Button from "react-bootstrap/Button";
-import Form from "react-bootstrap/Form";
-import Nav from "react-bootstrap/Nav";
-import Navbar from "react-bootstrap/Navbar";
-import Dropdown from "react-bootstrap/Dropdown";
+import { Col, Container, Image, Row, Button, Form, Nav, Navbar, Dropdown, Modal } from "react-bootstrap";
 import { Link } from "react-router-dom";
-import logo from "../assests/logo.png";
-import Modal from "react-bootstrap/Modal";
 import "./Shared.css";
 import { useForm } from "react-hook-form";
 import { FcGoogle } from "react-icons/fc";
 import { FaFacebook } from "react-icons/fa";
+import logo from "../assests/logo.png";
 import regis from "../assests/regis.png";
 import login from "../assests/log.png";
 

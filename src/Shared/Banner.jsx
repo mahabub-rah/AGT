@@ -1,6 +1,5 @@
 import React from "react";
-import { Button, Image } from "react-bootstrap";
-import banner from "../assests/slider.png";
+import { Button, } from "react-bootstrap";
 import "./Banner.css";
 
 const Banner = () => {

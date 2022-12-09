@@ -1,6 +1,7 @@
 import React from 'react';
 import { Outlet } from 'react-router-dom';
-import Banner from '../Pages/Banner';
+import Banner from '../Shared/Banner';
+import Category from '../Shared/Category';
 import Footer from '../Shared/Footer';
 import Header from '../Shared/Header';
 
@@ -9,6 +10,7 @@ const Main = () => {
         <>
             <Header></Header>
             <Banner></Banner>
+            <Category></Category>
             <Outlet></Outlet>
             <Footer></Footer>
         </>
