@@ -6,8 +6,8 @@
 }
 @media screen and (min-width:576px) {
 .text-section{
-     padding-top: 100px!important;
-    padding-bottom: 10px !important;
+     padding-top: 37px!important;
+    padding-bottom: 8px !important;
 }
 }
 @media screen and (min-width:768px) {
@@ -24,7 +24,7 @@
 }
 @media screen and (max-width:576px) {
 .text-section{
-     padding-top: 40px!important;
+     padding-top: 15px!important;
     padding-bottom: 5px !important;
 }
 }
