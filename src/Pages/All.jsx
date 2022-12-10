@@ -1,15 +1,25 @@
-import { useQuery } from '@tanstack/react-query';
-import React, { useState } from 'react';
-import { useLoaderData } from 'react-router-dom';
-import AllCard from './AllCard';
+import React, { useState } from "react";
+import { Col, Container, Row } from "react-bootstrap";
+import { useLoaderData } from "react-router-dom";
+import AllCard from "./AllCard";
+import Sidebar from "./Sidebar";
 
 const All = () => {
-    const items = useLoaderData();
-    return (
-        <div>
-            {items.map((item, idx)=><AllCard item={item} key={idx}></AllCard>)}
-        </div>
-    );
+  const items = useLoaderData();
+  return (
+    <Container>
+      <Row>
+        <Col lg={8}>
+          {items.map((item, idx) => (
+            <AllCard item={item} key={idx}></AllCard>
+          ))}
+              </Col>
+              <Col lg={4} className="d-none d-lg-block">
+                  <Sidebar></Sidebar>
+              </Col>
+      </Row>
+    </Container>
+  );
 };
 
 export default All;

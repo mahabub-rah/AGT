@@ -23,10 +23,10 @@ const AllCard = ({ item }) => {
       <Card className="my-4">
         <Card.Img variant="top" src={image} />
         <Card.Body>
-          {category === "Article" && <h5>✍️ Article</h5>}
-          {category === "Education" && <h5> 🔬️ Education</h5>}
-          {category === "Meetup" && <h5> 🗓️ Meetup</h5>}
-          {category === "Job" && <h5> 💼️ Job</h5>}
+          {category === "Article" && <h5 className="mt-1 mb-3">✍️ Article</h5>}
+          {category === "Education" && (  <h5 className="mt-1 mb-3"> 🔬️ Education</h5>)}
+          {category === "Meetup" && <h5 className="mt-1 mb-3"> 🗓️ Meetup</h5>}
+          {category === "Job" && <h5 className="mt-1 mb-3"> 💼️ Job</h5>}
           <Card.Title className="d-flex justify-content-between align-items-center fs-3 fw-bold">
             <div>{heading}</div>
             <div>
@@ -104,7 +104,9 @@ const AllCard = ({ item }) => {
                 />
                 <h4 className="p-0 m-0">{authorName}</h4>
               </div>
-              <Button variant="light"><BsShareFill/></Button>
+              <Button variant="light">
+                <BsShareFill />
+              </Button>
             </div>
           </Card.Text>
         </Card.Body>

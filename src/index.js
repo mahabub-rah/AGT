@@ -5,7 +5,7 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import "bootstrap/dist/css/bootstrap.min.css";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import AuthContext from './Auth/AuthContex';
+import AuthContext from './Auth/AuthContext';
 
 
 

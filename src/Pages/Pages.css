@@ -1,3 +1,24 @@
 .dropdown-toggle:after{
     display: none !important;
 }
+
+
+.searchTerm {
+  width: 100% !important;
+  border: 3px solid #00B4CC !important;
+  border-right: none !important;
+  border-top: none !important;
+  border-left: none !important;
+  padding: 5px !important;
+  height: 20px !important;
+  outline: none !important;
+  color: #9DBFAF !important;
+}
+
+.searchTerm:focus{
+  color: #00B4CC;
+}
+
+
+
+
