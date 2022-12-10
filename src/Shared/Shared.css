@@ -1,10 +1,22 @@
-.modal-title{
-    background-color:#EFFFF4 ;
+.modal-title {
+  background-color: #effff4;
 }
-.dropdown-category a{
+.nav-category a{
     text-decoration: none;
+    color: rgb(70, 69, 69);
 }
-.dropdown-category a:hover{
-    text-transform: uppercase;
-    
+.nav-category a:hover{
+    color: black;
+}
+.nav-category  .active{
+    color: black;
+    font-weight: 600;
+    text-decoration: underline;
+    padding: 0px 4px;
+}
+.dropdown-category a {
+  text-decoration: none;
+}
+.dropdown-category a:hover {
+  text-transform: uppercase;
 }

@@ -16,41 +16,41 @@ import "./Shared.css";
 const Category = () => {
   return (
     <Container>
-      <Navbar className="d-none d-md-block py-4" expand="md">
+      <Navbar className="d-none d-md-block py-4 nav-category" expand="md">
         <Container>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-0">
               <NavLink
-                className="me-2 fs-6 fw-semibold"
+                className="me-3 fs-6 fw-semibold"
                 variant="transparent"
-                to="/allpost"
+                to="/"
               >
                 All Post
               </NavLink>
               <NavLink
-                className="me-2 fs-6 fw-semibold"
+                className="me-3 fs-6 fw-semibold"
                 variant="transparent"
                 to="/article"
               >
                 Article
               </NavLink>
               <NavLink
-                className="me-2 fs-6 fw-semibold"
+                className="me-3 fs-6 fw-semibold"
                 variant="transparent"
                 to="/event"
               >
                 Event
               </NavLink>
               <NavLink
-                className="me-2 fs-6 fw-semibold"
+                className="me-3 fs-6 fw-semibold"
                 variant="transparent"
                 to="/education"
               >
                 Education
               </NavLink>
               <NavLink
-                className="me-2 fs-6 fw-semibold"
+                className="fs-6 fw-semibold"
                 variant="transparent"
                 to="/job"
               >
@@ -84,7 +84,7 @@ const Category = () => {
           <Dropdown.Toggle split variant="light" id="dropdown-split-basic" />
 
           <Dropdown.Menu className="dropdown-category">
-            <NavLink to="/allpost">
+            <NavLink to="/">
               <Dropdown.Item as="button">All Post</Dropdown.Item>
             </NavLink>
             <NavLink to="/article">
