@@ -1,3 +1,10 @@
 .modal-title{
     background-color:#EFFFF4 ;
 }
+.dropdown-category a{
+    text-decoration: none;
+}
+.dropdown-category a:hover{
+    text-transform: uppercase;
+    
+}
