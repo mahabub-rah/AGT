@@ -7,9 +7,6 @@ import { Helmet } from 'react-helmet';
 const Error = () => {
     return (
       <>
-        <Helmet>
-          <title>Invalid Url | Next</title>
-        </Helmet>
         <div>
           <div class="text-center">
             <svg
