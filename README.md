@@ -2,7 +2,7 @@
 ### Live Site
 
 Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Open [https://mr-atg-world.netlify.app/](https://mr-atg-world.netlify.app/) to view it in your browser.
 
 
 ### BackEnd Code
