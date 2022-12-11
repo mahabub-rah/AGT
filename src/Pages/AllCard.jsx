@@ -17,7 +17,6 @@ const AllCard = ({ item }) => {
     authorImage,
     authorName,
   } = item;
-  console.log(item);
   return (
     <Container>
       <Card className="my-4">

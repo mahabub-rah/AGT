@@ -16,27 +16,28 @@ function App() {
         {
           path: "/",
           element: <All></All>,
-          loader: () => fetch("http://localhost:5000/all"),
+          loader: () => fetch("https://atgworld-server-site.vercel.app/all"),
         },
         {
           path: "/article",
           element: <Article></Article>,
-          loader: () => fetch("http://localhost:5000/article"),
+          loader: () =>
+            fetch("https://atgworld-server-site.vercel.app/article"),
         },
         {
           path: "/event",
           element: <Event></Event>,
-          loader: () => fetch("http://localhost:5000/event"),
+          loader: () => fetch("https://atgworld-server-site.vercel.app/event"),
         },
         {
           path: "/education",
           element: <Edu></Edu>,
-          loader: () => fetch("http://localhost:5000/edu"),
+          loader: () => fetch("https://atgworld-server-site.vercel.app/edu"),
         },
         {
           path: "/job",
           element: <Job></Job>,
-          loader: () => fetch("http://localhost:5000/job"),
+          loader: () => fetch("https://atgworld-server-site.vercel.app/job"),
         },
       ],
     },
