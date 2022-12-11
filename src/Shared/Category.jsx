@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useContext } from "react";
 import {
   Container,
   Nav,
@@ -6,14 +6,18 @@ import {
   Dropdown,
   ButtonGroup,
   Button,
-  FloatingLabel,
-  Form,
 } from "react-bootstrap";
 import { NavLink } from "react-router-dom";
 import { BsFillPeopleFill } from "react-icons/bs";
+import { BiExit } from "react-icons/bi";
 import "./Shared.css";
+import { UserAuth } from "../Auth/AuthContext";
 
 const Category = () => {
+
+  const {user} = useContext(UserAuth)
+
+
   return (
     <Container>
       <Navbar className="d-none d-md-block py-4 nav-category" expand="md">
@@ -57,20 +61,28 @@ const Category = () => {
                 Job
               </NavLink>
             </Nav>
-              <Dropdown className="me-2 mx-auto">
-                <Dropdown.Toggle variant="light" id="dropdown-basic">
-                  Write a Post
-                </Dropdown.Toggle>
-                <Dropdown.Menu className="dropdown-category">
-                  <NavLink>
-                    <Dropdown.Item as="button">Report a Post</Dropdown.Item>
-                  </NavLink>
-                  <NavLink>
-                    <Dropdown.Item as="button">Update Post</Dropdown.Item>
-                  </NavLink>
-                </Dropdown.Menu>
-              </Dropdown>
-              <Button variant="primary"><BsFillPeopleFill/> Join Group</Button>
+            <Dropdown className="me-2 mx-auto">
+              <Dropdown.Toggle variant="light" id="dropdown-basic">
+                Write a Post
+              </Dropdown.Toggle>
+              <Dropdown.Menu className="dropdown-category">
+                <NavLink>
+                  <Dropdown.Item as="button">Report a Post</Dropdown.Item>
+                </NavLink>
+                <NavLink>
+                  <Dropdown.Item as="button">Update Post</Dropdown.Item>
+                </NavLink>
+              </Dropdown.Menu>
+            </Dropdown>
+            {user ? (
+              <Button variant="primary">
+                <BiExit className="fs-5"/> Leave Group
+              </Button>
+            ) : (
+              <Button variant="primary">
+                <BsFillPeopleFill /> Join Group
+              </Button>
+            )}
           </Navbar.Collapse>
         </Container>
       </Navbar>

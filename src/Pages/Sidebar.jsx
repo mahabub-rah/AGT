@@ -1,12 +1,14 @@
 import React, { useContext } from "react";
 import { UserAuth } from "../Auth/AuthContext";
-import "./Pages.css";
 import { BsPencilFill } from "react-icons/bs";
 import { ImLocation } from "react-icons/im";
 import { BiErrorCircle } from "react-icons/bi";
 import { AiFillLike } from "react-icons/ai";
 import { Button, Form, Image } from "react-bootstrap";
 import man from '../assests/man.png'
+import "./Pages.css";
+
+
 const Sidebar = () => {
   const { user } = useContext(UserAuth);
   return (
