@@ -6,12 +6,14 @@ import Edu from "./Pages/Edu";
 import Article from "./Pages/Article";
 import Event from "./Pages/Event";
 import Job from "./Pages/Job";
+import Error from "./Pages/Error/Error";
 
 function App() {
   const router = createBrowserRouter([
     {
       path: "/",
       element: <Main></Main>,
+      errorElement:<Error></Error>,
       children: [
         {
           path: "/",
