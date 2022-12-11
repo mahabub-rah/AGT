@@ -43,8 +43,8 @@ const AllCard = ({ item }) => {
                   <Dropdown.Item>
                     Report
                   </Dropdown.Item>
-                  <Dropdown.Item href="#/action-3">
-                    Hide 
+                  <Dropdown.Item>
+                    Hide
                   </Dropdown.Item>
                 </Dropdown.Menu>
               </Dropdown>
